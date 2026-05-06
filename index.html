@@ -30,7 +30,7 @@
             
             <div class="status-fixed-info">
                 <div class="status-indicator online"></div> 
-                <span class="status-label">Tersambung</span>
+                <span class="status-label" id="status">Tersambung</span>
             </div> 
         </aside>
 
@@ -56,13 +56,13 @@
                 <div class="card-grid">
                     <div class="card">
                         <p>pH Air</p>
-                        <h3>7.2</h3>
+                        <h3><span id="phAir">?</span></h3>
                         <span>Status: Normal</span>
                     </div>
 
                     <div class="card">
-                        <p>Suhu Udara</p>
-                        <h3>28°C</h3>
+                        <p>Suhu Air</p>
+                        <h3><span id="suhuAir">?</span>°C</h3>
                         <span>Status: Stabil</span>
                     </div>
 
@@ -70,7 +70,7 @@
                         <div class="card-header-flex">
                             <div class="status-text-group">
                                 <p>Kualitas Gas</p>
-                                <h3 class="warning-text">Bahaya: Gas Tinggi!</h3>
+                                <h3 class="warning-text"><span id="gas">?</span>PPM</h3>
                                 <span class="status-gas">Udara Bersih</span>
                             </div>
                         </div>
@@ -79,8 +79,8 @@
                 </div>
             </section>
 
-            <!-- SECTION SWITCH (Sudah diperbaiki ID-nya agar sesuai sidebar) -->
-            <section id="switch" style="margin-top: 40px;">
+<!-- Pastikan huruf S-nya Kapital agar sama persis dengan sidebar -->
+<section id="Switch-Control" style="margin-top: 40px;">
                 <h2 style="font-size: 13px; color: #444; margin-bottom: 25px; letter-spacing: 2px; font-weight: 700; padding-left: 5px;">Switch Control</h2>
                 <div class="card-grid">
                     <div class="card">
